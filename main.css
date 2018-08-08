@@ -1,0 +1,215 @@
+/*NOTES
+Work on fonts
+Work on aligning the content in the collumns to center
+DONE: work on two collumns
+*/
+
+
+body{
+	background-color: #fff;
+	margin:0;
+	margin-top: -10px;
+}
+h1{
+	font-size: 25px;
+	text-align: center;
+}
+h2{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 0;
+}
+p {
+	font-size: 18px;
+}
+
+button {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-style: none;
+}
+
+/*********************NAV BAR STYLING **********************/
+nav{
+	background: blue;
+	margin-bottom:-10px;
+
+}
+ul {
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+li {
+	display: inline;
+}
+
+li a {
+	text-decoration: none;
+	text-align: center;
+	padding:10px 10px;
+}
+
+li a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+}
+/***************************MAIN LANDING PAGE SECTION *********************/
+#main-landing{
+	background:yellow;
+}
+.collumns2{
+/*	padding-left: 10px;*/
+	float:left;
+	width:50%;
+}
+
+#main-img{
+	/*width:60%;*/
+/*centering the image*/   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+#second-collumn{
+	text-align: center;
+	margin-top:50px;
+}
+#second-collumn p {
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    }o
+#second-collumn button{
+
+	
+	 /*centering the image*/   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*******************BUTTON**********************************/
+#call-to-action {
+	background-color: #ddd;
+	padding:10px 10px;
+}
+#call-to-action:hover {
+    background-color: #fdd;
+    padding: 15px;
+    transition:0.1s;
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*******************END OF MAIN LANDING PAGE SECTION ******************/
+/****************MAIN-ATTRACTION ***************************/
+#main-attraction {
+	background-color: red;
+	min-height:150px;
+	text-align: center;
+	padding: 50px 40px;
+}
+#main-attraction button {
+	background-color: #ddd;
+	padding:10px 10px;
+    width: 50%;
+}
+#main-attraction button:hover {
+    background-color: #fdd;
+    padding: 15px 15px;
+    transition:0.1s;
+}
+/**************END OF MAIN ATTRACTION ***********************/
+/****************** THE 3 COLLUMNS LAYOUT ******************/
+ #books{
+ 	background:yellow;
+ 	padding-top: 30px;
+ 	padding-bottom:20px;
+ }
+ #books1{
+ 	background:blue;
+ 	padding-top: 30px;
+ 	padding-bottom:20px;
+
+ }
+ .book1{
+ 	background-color: green;
+ }
+ .collumn {
+ 	/*padding-left: 5%;*/
+    float: left;
+    width: 33.33%;
+
+}
+.group-pics{
+ /*centering the image*/   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.collumn button {
+	background-color: #ddd;
+	padding:10px 10px;
+	
+}
+.collumn button:hover {
+    background-color: #fdd;
+    padding: 15px 15px;
+    transition:0.1s;
+}
+/********************END OF 3 COLLUMNS ******************************/
+/********************BLURB******************************************/
+#blurb {
+	background-color: orange;
+	min-height:200px;
+	text-align: left;
+	padding: 50px 40px;
+}
+/********************END OF BLURB******************************************/
+/**********************author section ************************/
+#author{
+	background:yellow;
+	padding: 40px 40px;
+}
+#author-img{
+	width:100%;
+}
+
+.righty{
+	text-align: left;
+}
+/**********************END OF author section ************************/
+/**********************WHO the book is for **************************/
+#who {
+	background: green;
+	padding-left: 40px;
+}
+
+/**********************WHO the book is for **************************/
+/* Responsive layout - when the screen is less than 600px wide, make the
+ the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .collumn {
+        width: 100%;
+    }
+    .collumns2 {
+        width: 100%;
+    }
+}

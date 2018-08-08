@@ -1,0 +1,6 @@
+It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the "You Don’t Know JS" book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid.
+
+The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript.
+
+With this book you will:
+Learn the essential programming building blocks, including operators, types, variables, conditionals, loops, and functions Become familiar with JavaScript's core mechanisms such as values, function closures, this, and prototypes Get an overview of other books in the series—and learn why it’s important to understand all parts of JavaScript (less)
