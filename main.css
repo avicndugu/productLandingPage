@@ -1,9 +1,18 @@
 /*NOTES
 Work on fonts
-Work on aligning the content in the collumns to center
+DONE: Work on aligning the content in the collumns to center
 DONE: work on two collumns
+Work on footer
+work who would benefit from the book
 */
 
+/*************************fonts***********************/
+@font-face {
+  font-family: bebas-neue;
+  src: url("https://use.typekit.net/af/c080f0/0000000000000000000149c5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/c080f0/0000000000000000000149c5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/c080f0/0000000000000000000149c5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
 
 body{
 	background-color: #fff;
@@ -11,35 +20,61 @@ body{
 	margin-top: -10px;
 }
 h1{
-	font-size: 25px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
 	text-align: center;
+
 }
 h2{
+	font-family: "Courier New", Courier, monospace;
 	font-size: 25px;
 	text-align: center;
 	margin-top: 0;
 }
 p {
-	font-size: 18px;
+	font-family:Impact, Charcoal, sans-serif;
+	font-size: 20px;
 }
 
 button {
+	font-family: bebas-neue, Times, serif;
+	font-size:22px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
 	border-style: none;
+	background:#f88e37;
+	color:#fff;
+	padding:10px 10px;
+	margin-bottom: 10px;
+	border-radius:10px;
 }
-
+button:hover {
+	background-color:#3daadd;
+    padding: 15px 15px;
+    transition:0.1s;
+}
+footer{
+	text-align: center;
+	padding:20px;
+	background-color: #ebeae6;
+}
+a {
+	font-family:Impact, Charcoal, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	padding:10px 10px;
+}
 /*********************NAV BAR STYLING **********************/
 nav{
-	background: blue;
-	margin-bottom:-10px;
+	background:#363636;
+	margin-bottom:-17px;
 
 }
 ul {
 	list-style-type: none;
 	margin: 10px;
-	padding: 10px;
+	padding: 30px 10px;
 	text-align: center;
 	/*overflow: hidden;*/
 }
@@ -51,6 +86,7 @@ li a {
 	text-decoration: none;
 	text-align: center;
 	padding:10px 10px;
+	color:#fff;
 }
 
 li a:hover {
@@ -58,17 +94,24 @@ li a:hover {
     text-decoration: none;
 }
 /***************************MAIN LANDING PAGE SECTION *********************/
-#main-landing{
-	background:yellow;
+main {
+	padding: 15px 0px;
+	background:#ebeae6;
 }
+/*#main-landing{
+	background:yellow;
+}*/
 .collumns2{
 /*	padding-left: 10px;*/
 	float:left;
 	width:50%;
+	padding-bottom: 30px;
 }
 
 #main-img{
 	/*width:60%;*/
+	border-radius:10px;
+	border:1px solid #333;
 /*centering the image*/   
     display: block;
     margin-left: auto;
@@ -83,25 +126,28 @@ li a:hover {
 	margin-left: auto;
     margin-right: auto;
     width: 90%;
-    }o
+    }
 #second-collumn button{
 
-	
+	/*background:#f88e37/*#ff5a00;*/
 	 /*centering the image*/   
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;	
     width: 50%;
+    color:#fff;
+
 }
 /*******************BUTTON**********************************/
 #call-to-action {
-	background-color: #ddd;
+/*	background-color: #ddd;*/
 	padding:10px 10px;
 }
 #call-to-action:hover {
-    background-color: #fdd;
+    /*background-color:#3daadd;*/
     padding: 15px;
-    transition:0.1s;
+    transition:0.3s;
 
 }
 .row:after {
@@ -112,36 +158,37 @@ li a:hover {
 /*******************END OF MAIN LANDING PAGE SECTION ******************/
 /****************MAIN-ATTRACTION ***************************/
 #main-attraction {
-	background-color: red;
+	background-color: #011926;
 	min-height:150px;
 	text-align: center;
 	padding: 50px 40px;
+	color:#fff;
 }
 #main-attraction button {
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 	padding:10px 10px;
     width: 50%;
 }
 #main-attraction button:hover {
-    background-color: #fdd;
+  /*  background-color: ;*/
     padding: 15px 15px;
     transition:0.1s;
 }
 /**************END OF MAIN ATTRACTION ***********************/
 /****************** THE 3 COLLUMNS LAYOUT ******************/
  #books{
- 	background:yellow;
+/* 	background:yellow;*/
  	padding-top: 30px;
  	padding-bottom:20px;
  }
  #books1{
- 	background:blue;
+/* 	background:blue;*/
  	padding-top: 30px;
  	padding-bottom:20px;
 
  }
  .book1{
- 	background-color: green;
+/* 	background-color: green;*/
  }
  .collumn {
  	/*padding-left: 5%;*/
@@ -155,37 +202,41 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    border:5px solid #fff;
+    border-radius: 10px;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
+    /*content: "";
+    display: table;*/
     clear: both;
 }
 
 .collumn button {
-	background-color: #ddd;
-	padding:10px 10px;
+/*	background-color: #ddd;*/
+	/*padding:10px 10px;*/
 	
 }
 .collumn button:hover {
-    background-color: #fdd;
+/*    background-color: #fdd;*/
     padding: 15px 15px;
     transition:0.1s;
 }
 /********************END OF 3 COLLUMNS ******************************/
 /********************BLURB******************************************/
 #blurb {
-	background-color: orange;
+	background-color: #011926;
 	min-height:200px;
 	text-align: left;
 	padding: 50px 40px;
+	color:#fff;
 }
 /********************END OF BLURB******************************************/
 /**********************author section ************************/
 #author{
-	background:yellow;
+/*	background:yellow;*/
 	padding: 40px 40px;
 }
 #author-img{
@@ -198,9 +249,12 @@ li a:hover {
 /**********************END OF author section ************************/
 /**********************WHO the book is for **************************/
 #who {
-	background: green;
+	padding:20px 0;
+	background:#011926;
 	padding-left: 40px;
+	color:#fff;
 }
+
 
 /**********************WHO the book is for **************************/
 /* Responsive layout - when the screen is less than 600px wide, make the
@@ -213,3 +267,4 @@ li a:hover {
         width: 100%;
     }
 }
+
