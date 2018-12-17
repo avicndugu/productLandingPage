@@ -14,14 +14,18 @@ work who would benefit from the book
   font-weight: 400;
 }
 
+body, div, h1, ul {
+	margin:0;
+}
 body{
 	background-color: #fff;
 	margin:0;
-	margin-top: -10px;
+/*	margin-top: -10px;*/
 }
 h1{
 	font-family: "Courier New", Courier, monospace;
 	font-size: 30px;
+	padding:40px 0;
 	text-align: center;
 
 }
@@ -67,14 +71,13 @@ a {
 }
 /*********************NAV BAR STYLING **********************/
 nav{
-	background:#363636;
-	margin-bottom:-17px;
-
+	background:#ebeae6;
+	/*margin-bottom:-17px;*/
 }
 ul {
 	list-style-type: none;
-	margin: 10px;
-	padding: 30px 10px;
+	/*margin: 10px;*/
+	padding: 40px 10px;
 	text-align: center;
 	/*overflow: hidden;*/
 }
@@ -86,7 +89,7 @@ li a {
 	text-decoration: none;
 	text-align: center;
 	padding:10px 10px;
-	color:#fff;
+	color:#333;
 }
 
 li a:hover {
@@ -95,6 +98,7 @@ li a:hover {
 }
 /***************************MAIN LANDING PAGE SECTION *********************/
 main {
+	border-top: 1px solid black;
 	padding: 15px 0px;
 	background:#ebeae6;
 }
@@ -249,9 +253,9 @@ main {
 /**********************END OF author section ************************/
 /**********************WHO the book is for **************************/
 #who {
-	padding:20px 0;
+	padding:20px 40px;
 	background:#011926;
-	padding-left: 40px;
+	/*padding-left: 40px;*/
 	color:#fff;
 }
 
