@@ -258,7 +258,16 @@ main {
 	/*padding-left: 40px;*/
 	color:#fff;
 }
-
+ footer {
+ 	background: #011926;
+ 	color:#fff;
+ }
+ footer a {
+ 	color:#fff;
+ }
+ footer a:hover {
+ 	color:#f88e37;
+ }
 
 /**********************WHO the book is for **************************/
 /* Responsive layout - when the screen is less than 600px wide, make the
